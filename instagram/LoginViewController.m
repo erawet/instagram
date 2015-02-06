@@ -25,20 +25,33 @@
 //    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
 //    testObject[@"foo"] = @"bar";
 //    [testObject saveInBackground];
+    self.email.text=@"erawet@gmail.com";
+    self.password.text=@"Password1";
     
-    
-    
-    
+
     
 }
+
 - (IBAction)onLoginPress:(UIButton *)sender {
     
+    [PFUser logInWithUsernameInBackground:self.email.text password:self.password.text block:^(PFUser *user, NSError *error) {
+        if (user) {
+             [self performSegueWithIdentifier:@"goToTabBar" sender:self];
+        }else{
+             [self alertMessage:@"Invalied Password"];
+             [self dismissViewControllerAnimated:YES completion:nil];
+        }
+    }];
 }
+
+
 - (IBAction)onSignUpPress:(UIButton *)sender {
     self.confirmPassword.hidden=false;
     
+    
     PFUser *newUser=[PFUser user];
     newUser.username=self.email.text;
+    newUser.email=self.email.text;
     
     if ([self.password.text isEqualToString:self.confirmPassword.text]) {
         newUser.password=self.confirmPassword.text;
@@ -47,15 +60,19 @@
             if (!error) {
                 [self performSegueWithIdentifier:@"goToTabBar" sender:self];
             } else {
-                NSString *errorString = [error userInfo][@"error"];
-                // Show the errorString somewhere and let the user try again.
+                //NSString *errorString = [error userInfo][@"error"];
+                [self dismissViewControllerAnimated:YES completion:nil];
             }
         }];
-
     } else{
-        UIAlertView *alertmessage=[[UIAlertView alloc]initWithTitle:@"Warning!!" message:@"Password does not match" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
-        [alertmessage show];
+        [self alertMessage:@"Password does not match"];
     }
+}
+
+-(void)alertMessage:(NSString*)message{
+    
+    UIAlertView *alertmessage=[[UIAlertView alloc]initWithTitle:@"Error!!" message:message delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
+    [alertmessage show];
 }
 
 - (void)didReceiveMemoryWarning {

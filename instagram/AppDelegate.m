@@ -21,14 +21,16 @@
     // https://parse.com/docs/ios_guide#localdatastore/iOS
     [Parse enableLocalDatastore];
     
-    // Initialize Parse.
-    [Parse setApplicationId:@"44GPOh9QqFxNZjGQyEcEm7idKJEpEdyhuZEc4vTY"
-                  clientKey:@"WaKedoOfq86ydogBT96JwKt6gYKCtbvp38Sm24TW"];
+// Initialize Parse.
+// Key for RemindMe DB
+//    [Parse setApplicationId:@"44GPOh9QqFxNZjGQyEcEm7idKJEpEdyhuZEc4vTY"
+//                  clientKey:@"WaKedoOfq86ydogBT96JwKt6gYKCtbvp38Sm24TW"];
+    
+    [Parse setApplicationId:@"oOK1s4Cc9tw0Xb1wiN5zIxXut7EZIyxjuIbdgEHf"
+                  clientKey:@"eZMOHiF0rQigkHVZAhn5lOSrO2JYa1EGjyxHYdDc"];
     
     // [Optional] Track statistics around application opens.
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-    
-    
     
     return YES;
 }

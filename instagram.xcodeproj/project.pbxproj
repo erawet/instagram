@@ -30,6 +30,7 @@
 		03C5FF291A81E5E00007BA0B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C5FF281A81E5E00007BA0B /* libz.dylib */; };
 		03C5FF2B1A81E5F50007BA0B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C5FF2A1A81E5F50007BA0B /* libsqlite3.dylib */; };
 		03C5FF2F1A81E7690007BA0B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C5FF2E1A81E7690007BA0B /* LoginViewController.m */; };
+		03C5FF681A84898B0007BA0B /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C5FF671A84898B0007BA0B /* CameraViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		03C5FF2A1A81E5F50007BA0B /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		03C5FF2D1A81E7690007BA0B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		03C5FF2E1A81E7690007BA0B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		03C5FF661A84898B0007BA0B /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		03C5FF671A84898B0007BA0B /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,8 @@
 				03C5FEB71A81B70B0007BA0B /* AppDelegate.m */,
 				03C5FF2D1A81E7690007BA0B /* LoginViewController.h */,
 				03C5FF2E1A81E7690007BA0B /* LoginViewController.m */,
+				03C5FF661A84898B0007BA0B /* CameraViewController.h */,
+				03C5FF671A84898B0007BA0B /* CameraViewController.m */,
 				03C5FEDB1A81B7C40007BA0B /* HomeViewController.h */,
 				03C5FEDC1A81B7C40007BA0B /* HomeViewController.m */,
 				03C5FEBC1A81B70B0007BA0B /* SecondViewController.h */,
@@ -304,6 +309,7 @@
 				03C5FEBE1A81B70B0007BA0B /* SecondViewController.m in Sources */,
 				03C5FEB81A81B70B0007BA0B /* AppDelegate.m in Sources */,
 				03C5FEB51A81B70B0007BA0B /* main.m in Sources */,
+				03C5FF681A84898B0007BA0B /* CameraViewController.m in Sources */,
 				03C5FEDD1A81B7C40007BA0B /* HomeViewController.m in Sources */,
 				03C5FF2F1A81E7690007BA0B /* LoginViewController.m in Sources */,
 			);
@@ -504,6 +510,7 @@
 				03C5FED71A81B70B0007BA0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03C5FED81A81B70B0007BA0B /* Build configuration list for PBXNativeTarget "instagramTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +519,7 @@
 				03C5FEDA1A81B70B0007BA0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
