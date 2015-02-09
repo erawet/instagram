@@ -13,6 +13,7 @@
 @interface GalleryViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *galleryCollection;
-@property (nonatomic, strong) NSMutableArray *imageList;
+@property (nonatomic, strong) NSMutableArray *imagesArray;
+@property (nonatomic, strong) NSArray *imageFileArray;
 
 @end

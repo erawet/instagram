@@ -45,7 +45,6 @@
     }];
 }
 
-
 - (IBAction)onSignUpPress:(UIButton *)sender {
     self.confirmPassword.hidden=false;
     

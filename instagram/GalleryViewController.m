@@ -17,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [self queryImageList];
 }
 
 -(void)queryImageList{
@@ -26,13 +29,10 @@
     [imageQuery findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
        
         if (!error) {
-            self.imageList=[[NSMutableArray alloc]initWithArray:objects];
+            self.imageFileArray=[[NSMutableArray alloc]initWithArray:objects];
             [self.galleryCollection reloadData];
         }
-        
     }];
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,7 +47,7 @@
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
-    return 1;
+    return self.imageFileArray.count;
 }
 
 -(UICollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -55,11 +55,19 @@
     //static NSString *cell
     GalleryCollectionViewCell *cell=(GalleryCollectionViewCell*)[collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     
+    PFObject *imageObject=[self.imageFileArray objectAtIndex:indexPath.row];
+    PFFile *imageFile=[imageObject objectForKey:@"imageFile"];
+    [imageFile getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
+        if (!error) {
+            cell.imageView.image=[UIImage imageWithData:data];
+        }
+    }];
     
     return cell;
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+   
     
 }
 

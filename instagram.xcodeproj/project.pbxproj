@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		03C5FEB51A81B70B0007BA0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C5FEB41A81B70B0007BA0B /* main.m */; };
 		03C5FEB81A81B70B0007BA0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C5FEB71A81B70B0007BA0B /* AppDelegate.m */; };
-		03C5FEBE1A81B70B0007BA0B /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C5FEBD1A81B70B0007BA0B /* SecondViewController.m */; };
 		03C5FEC11A81B70B0007BA0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C5FEBF1A81B70B0007BA0B /* Main.storyboard */; };
 		03C5FEC31A81B70B0007BA0B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03C5FEC21A81B70B0007BA0B /* Images.xcassets */; };
 		03C5FEC61A81B70B0007BA0B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03C5FEC41A81B70B0007BA0B /* LaunchScreen.xib */; };
@@ -34,6 +33,8 @@
 		03C5FF6B1A87FA790007BA0B /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C5FF6A1A87FA790007BA0B /* Utility.m */; };
 		03C5FF6E1A8840470007BA0B /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C5FF6D1A8840470007BA0B /* GalleryViewController.m */; };
 		03C5FF741A8841D50007BA0B /* GalleryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C5FF731A8841D50007BA0B /* GalleryCollectionViewCell.m */; };
+		03C5FF7A1A88622D0007BA0B /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C5FF791A88622D0007BA0B /* HomeTableViewCell.m */; };
+		03C5FF7D1A8883D90007BA0B /* ImageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C5FF7C1A8883D90007BA0B /* ImageDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +53,6 @@
 		03C5FEB41A81B70B0007BA0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		03C5FEB61A81B70B0007BA0B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		03C5FEB71A81B70B0007BA0B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		03C5FEBC1A81B70B0007BA0B /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		03C5FEBD1A81B70B0007BA0B /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		03C5FEC01A81B70B0007BA0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03C5FEC21A81B70B0007BA0B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		03C5FEC51A81B70B0007BA0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -86,6 +85,10 @@
 		03C5FF6D1A8840470007BA0B /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
 		03C5FF721A8841D50007BA0B /* GalleryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryCollectionViewCell.h; sourceTree = "<group>"; };
 		03C5FF731A8841D50007BA0B /* GalleryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryCollectionViewCell.m; sourceTree = "<group>"; };
+		03C5FF781A88622C0007BA0B /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		03C5FF791A88622D0007BA0B /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
+		03C5FF7B1A8883D90007BA0B /* ImageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageDetailViewController.h; path = ../ImageDetailViewController.h; sourceTree = "<group>"; };
+		03C5FF7C1A8883D90007BA0B /* ImageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageDetailViewController.m; path = ../ImageDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,16 +150,18 @@
 				03C5FEB71A81B70B0007BA0B /* AppDelegate.m */,
 				03C5FF2D1A81E7690007BA0B /* LoginViewController.h */,
 				03C5FF2E1A81E7690007BA0B /* LoginViewController.m */,
+				03C5FEDB1A81B7C40007BA0B /* HomeViewController.h */,
+				03C5FEDC1A81B7C40007BA0B /* HomeViewController.m */,
+				03C5FF781A88622C0007BA0B /* HomeTableViewCell.h */,
+				03C5FF791A88622D0007BA0B /* HomeTableViewCell.m */,
 				03C5FF661A84898B0007BA0B /* CameraViewController.h */,
 				03C5FF671A84898B0007BA0B /* CameraViewController.m */,
 				03C5FF6C1A8840470007BA0B /* GalleryViewController.h */,
 				03C5FF6D1A8840470007BA0B /* GalleryViewController.m */,
 				03C5FF721A8841D50007BA0B /* GalleryCollectionViewCell.h */,
 				03C5FF731A8841D50007BA0B /* GalleryCollectionViewCell.m */,
-				03C5FEDB1A81B7C40007BA0B /* HomeViewController.h */,
-				03C5FEDC1A81B7C40007BA0B /* HomeViewController.m */,
-				03C5FEBC1A81B70B0007BA0B /* SecondViewController.h */,
-				03C5FEBD1A81B70B0007BA0B /* SecondViewController.m */,
+				03C5FF7B1A8883D90007BA0B /* ImageDetailViewController.h */,
+				03C5FF7C1A8883D90007BA0B /* ImageDetailViewController.m */,
 				03C5FEBF1A81B70B0007BA0B /* Main.storyboard */,
 				03C5FEC21A81B70B0007BA0B /* Images.xcassets */,
 				03C5FEC41A81B70B0007BA0B /* LaunchScreen.xib */,
@@ -321,10 +326,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03C5FEBE1A81B70B0007BA0B /* SecondViewController.m in Sources */,
 				03C5FF741A8841D50007BA0B /* GalleryCollectionViewCell.m in Sources */,
 				03C5FF6E1A8840470007BA0B /* GalleryViewController.m in Sources */,
+				03C5FF7A1A88622D0007BA0B /* HomeTableViewCell.m in Sources */,
 				03C5FEB81A81B70B0007BA0B /* AppDelegate.m in Sources */,
+				03C5FF7D1A8883D90007BA0B /* ImageDetailViewController.m in Sources */,
 				03C5FEB51A81B70B0007BA0B /* main.m in Sources */,
 				03C5FF681A84898B0007BA0B /* CameraViewController.m in Sources */,
 				03C5FF6B1A87FA790007BA0B /* Utility.m in Sources */,

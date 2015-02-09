@@ -136,7 +136,7 @@
     
     NSString* title;
     UIImagePickerControllerSourceType source;
-    if (buttonIndex == 2 && [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
+    if (buttonIndex == 0 && [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
         // if library is available, it's first index
         title = NSLocalizedString(@"Choose Photo", nil);
         source = UIImagePickerControllerSourceTypePhotoLibrary;
