@@ -31,6 +31,9 @@
 		03C5FF2B1A81E5F50007BA0B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C5FF2A1A81E5F50007BA0B /* libsqlite3.dylib */; };
 		03C5FF2F1A81E7690007BA0B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C5FF2E1A81E7690007BA0B /* LoginViewController.m */; };
 		03C5FF681A84898B0007BA0B /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C5FF671A84898B0007BA0B /* CameraViewController.m */; };
+		03C5FF6B1A87FA790007BA0B /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C5FF6A1A87FA790007BA0B /* Utility.m */; };
+		03C5FF6E1A8840470007BA0B /* GalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C5FF6D1A8840470007BA0B /* GalleryViewController.m */; };
+		03C5FF741A8841D50007BA0B /* GalleryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C5FF731A8841D50007BA0B /* GalleryCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,12 @@
 		03C5FF2E1A81E7690007BA0B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		03C5FF661A84898B0007BA0B /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
 		03C5FF671A84898B0007BA0B /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		03C5FF691A87FA790007BA0B /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		03C5FF6A1A87FA790007BA0B /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		03C5FF6C1A8840470007BA0B /* GalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryViewController.h; sourceTree = "<group>"; };
+		03C5FF6D1A8840470007BA0B /* GalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryViewController.m; sourceTree = "<group>"; };
+		03C5FF721A8841D50007BA0B /* GalleryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryCollectionViewCell.h; sourceTree = "<group>"; };
+		03C5FF731A8841D50007BA0B /* GalleryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +149,10 @@
 				03C5FF2E1A81E7690007BA0B /* LoginViewController.m */,
 				03C5FF661A84898B0007BA0B /* CameraViewController.h */,
 				03C5FF671A84898B0007BA0B /* CameraViewController.m */,
+				03C5FF6C1A8840470007BA0B /* GalleryViewController.h */,
+				03C5FF6D1A8840470007BA0B /* GalleryViewController.m */,
+				03C5FF721A8841D50007BA0B /* GalleryCollectionViewCell.h */,
+				03C5FF731A8841D50007BA0B /* GalleryCollectionViewCell.m */,
 				03C5FEDB1A81B7C40007BA0B /* HomeViewController.h */,
 				03C5FEDC1A81B7C40007BA0B /* HomeViewController.m */,
 				03C5FEBC1A81B70B0007BA0B /* SecondViewController.h */,
@@ -202,6 +215,8 @@
 		03C5FF301A81EB460007BA0B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				03C5FF691A87FA790007BA0B /* Utility.h */,
+				03C5FF6A1A87FA790007BA0B /* Utility.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -307,9 +322,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				03C5FEBE1A81B70B0007BA0B /* SecondViewController.m in Sources */,
+				03C5FF741A8841D50007BA0B /* GalleryCollectionViewCell.m in Sources */,
+				03C5FF6E1A8840470007BA0B /* GalleryViewController.m in Sources */,
 				03C5FEB81A81B70B0007BA0B /* AppDelegate.m in Sources */,
 				03C5FEB51A81B70B0007BA0B /* main.m in Sources */,
 				03C5FF681A84898B0007BA0B /* CameraViewController.m in Sources */,
+				03C5FF6B1A87FA790007BA0B /* Utility.m in Sources */,
 				03C5FEDD1A81B7C40007BA0B /* HomeViewController.m in Sources */,
 				03C5FF2F1A81E7690007BA0B /* LoginViewController.m in Sources */,
 			);

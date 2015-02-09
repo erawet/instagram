@@ -36,6 +36,7 @@
     
     [PFUser logInWithUsernameInBackground:self.email.text password:self.password.text block:^(PFUser *user, NSError *error) {
         if (user) {
+            [self saveUserDataLocally];
              [self performSegueWithIdentifier:@"goToTabBar" sender:self];
         }else{
              [self alertMessage:@"Invalied Password"];
@@ -58,6 +59,7 @@
         
         [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
             if (!error) {
+                [self saveUserDataLocally];
                 [self performSegueWithIdentifier:@"goToTabBar" sender:self];
             } else {
                 //NSString *errorString = [error userInfo][@"error"];
@@ -77,6 +79,13 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+-(void)saveUserDataLocally{
+    
+    NSUserDefaults *userEmail=[NSUserDefaults standardUserDefaults];
+    [userEmail setObject:self.email.text forKey:@"email"];
+    
 }
 
 
